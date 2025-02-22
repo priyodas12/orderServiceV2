@@ -1,0 +1,14 @@
+server:
+  port: 12346
+spring:
+  application:
+    name: orderService
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/order-service
+aws:
+  accessKeyId:
+  secretAccessKey:
+  region: ${DEFAULT_REGION}
+  sqs:
+    order-events-queue: https://sqs.region.amazonaws.com/<account_id>/<queue_name>
